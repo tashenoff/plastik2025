@@ -5,6 +5,7 @@ import servicesData from '@/data/services.json'
 import type { ServicesData } from '../../types/services'
 import FAQ from '../../components/FAQ'
 import Advantages from '../../components/Advantages'
+import Features from '../../components/Features'
 import PortfolioCarousel from '../../components/PortfolioCarousel'
 import HeroSection from '../../components/HeroSection'
 
@@ -24,7 +25,7 @@ export default function ServicePage({ params }: ServicePageProps) {
   }
 
   return (
-    <div className="space-y-16">
+    <div className="">
       {/* Hero Section */}
       <HeroSection
         title={service.title}
@@ -34,18 +35,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         showContactButton={true}
       />
 
-      {/* Features Section */}
-      <section className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Особенности {service.title.toLowerCase()}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {service.features.map((feature, index) => (
-            <div key={index} className="p-6 border border-gray-200 rounded-lg hover:border-blue-500 transition-colors flex flex-col items-center">
-              <div className="mb-4">{renderFeatureIcon(index)}</div>
-              <h3 className="text-xl font-semibold mb-2 text-center">{feature}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Features title="Особенности пластиковые окна пвх" features={service.features} />
 
       {/* Advantages Section */}
       <section className="py-16 bg-blue-900">
