@@ -1,0 +1,18 @@
+{
+  "name": "название",
+  "address": {
+    "street": "ул. Примерная, 123",
+    "city": "Астана",
+    "country": "Казахстан"
+  },
+  "contacts": {
+    "phone": "+7 (777) 123-45-67",
+    "email": "info@plastik-astana.kz",
+    "whatsapp": "+7 (777) 123-45-67"
+  },
+  "workingHours": {
+    "weekdays": "9:00 - 18:00",
+    "saturday": "10:00 - 16:00",
+    "sunday": "Выходной"
+  }
+} 

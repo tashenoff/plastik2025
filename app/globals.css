@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Custom styles */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-primary-blue hover:bg-primary-light text-white px-6 py-2 rounded-lg transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-secondary-red hover:bg-secondary-light text-white px-6 py-2 rounded-lg transition-colors;
+}
+
+/* Custom form styles */
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent;
+}
+
+/* Custom section styles */
+.section-padding {
+  @apply py-16;
+}
+
+/* Custom heading styles */
+.heading-1 {
+  @apply text-4xl font-bold mb-6;
+}
+
+.heading-2 {
+  @apply text-3xl font-bold mb-4;
+}
+
+.heading-3 {
+  @apply text-2xl font-semibold mb-3;
+} 
