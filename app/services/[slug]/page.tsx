@@ -1,15 +1,16 @@
 import React from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import servicesData from '@/data/services.json'
+import services from '@/data/services.json'
 import type { ServicesData } from '../../types/services'
 import FAQ from '../../components/FAQ'
 import Advantages from '../../components/Advantages'
 import Features from '../../components/Features'
 import PortfolioCarousel from '../../components/PortfolioCarousel'
 import HeroSection from '../../components/HeroSection'
+import CTASection from '../../components/CTASection'
 
-const services = servicesData as unknown as ServicesData
+const servicesData = services as unknown as ServicesData
 
 interface ServicePageProps {
   params: {
@@ -18,7 +19,7 @@ interface ServicePageProps {
 }
 
 export default function ServicePage({ params }: ServicePageProps) {
-  const service = services.services.find(s => s.slug === params.slug)
+  const service = servicesData.services.find(s => s.slug === params.slug)
 
   if (!service) {
     notFound()
@@ -84,18 +85,9 @@ export default function ServicePage({ params }: ServicePageProps) {
       {service.qa && <FAQ items={service.qa} />}
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Готовы установить новые окна?</h2>
-          <p className="text-xl mb-8">Свяжитесь с нами для бесплатной консультации и расчета стоимости</p>
-          <Link
-            href="/contact"
-            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
-          >
-            Оставить заявку
-          </Link>
-        </div>
-      </section>
+      <CTASection
+        backgroundImage="/images/services/cta-bg.jpg"
+      />
     </div>
   )
 }
