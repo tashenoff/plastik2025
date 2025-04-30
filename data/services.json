@@ -63,6 +63,12 @@
           "src": "/portfolio/plastic/demo2.jpg",
           "alt": "Пластиковые окна в офисе",
           "caption": "Офисное здание, 2022 год"
+        },
+
+        {
+          "src": "/portfolio/plastic/demo3.jpg",
+          "alt": "Пластиковые окна в офисе",
+          "caption": "Офисное здание, 2022 год"
         }
       ]
     },
@@ -127,6 +133,11 @@
         },
         {
           "src": "/portfolio/aluminum/demo2.jpg",
+          "alt": "Алюминиевые окна в торговом центре",
+          "caption": "ТЦ, 2023 год"
+        },
+        {
+          "src": "/portfolio/aluminum/demo3.jpg",
           "alt": "Алюминиевые окна в бизнес-центре",
           "caption": "Бизнес-центр, 2022 год"
         }
