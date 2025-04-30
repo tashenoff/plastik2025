@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import HeroSection from './components/HeroSection'
+import CTASection from './components/CTASection'
 
 export default function Home() {
   return (
@@ -10,12 +11,11 @@ export default function Home() {
       <section className="relative h-[600px] w-full">
         <div className="absolute inset-0 bg-red-500 opacity-90"></div>
         <HeroSection
-        title='Пластиковые и алюминиевые окна в Астане'
-        
-        description='Производство и установка качественных окон из ПВХ и алюминия. Современные технологии, надежные материалы и профессиональный монтаж.'
-        imageUrl="/images/hero-home.png"
-        showContactButton={true}
-      />
+          title='Пластиковые и алюминиевые окна в Астане'
+          description='Производство и установка качественных окон из ПВХ и алюминия. Современные технологии, надежные материалы и профессиональный монтаж.'
+          imageUrl="/images/hero-home.png"
+          showContactButton={true}
+        />
       </section>
 
       {/* Features Section */}
@@ -53,7 +53,7 @@ export default function Home() {
               </p>
               <Link 
                 href="/services/plastic-windows"
-                className="inline-block bg-primary-blue hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition-colors"
+                className="inline-block bg-primary-blue hover:bg-primary-light text-white px-6 py-2 rounded-lg transition-colors"
               >
                 Подробнее
               </Link>
@@ -66,7 +66,7 @@ export default function Home() {
               </p>
               <Link 
                 href="/services/aluminum-windows"
-                className="inline-block bg-primary-blue hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition-colors"
+                className="inline-block bg-primary-blue hover:bg-primary-light text-white px-6 py-2 rounded-lg transition-colors"
               >
                 Подробнее
               </Link>
@@ -76,18 +76,13 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary-blue text-white py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Готовы установить новые окна?</h2>
-          <p className="text-xl mb-8">Получите бесплатную консультацию и расчет стоимости</p>
-          <Link 
-            href="/contact" 
-            className="bg-secondary-red hover:bg-secondary-light text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
-          >
-            Оставить заявку
-          </Link>
-        </div>
-      </section>
+      <CTASection
+        backgroundImage="/images/services/cta-bg.jpg"
+        title="Готовы установить новые окна?"
+        description="Получите бесплатную консультацию и расчет стоимости"
+        buttonText="Оставить заявку"
+        buttonLink="/contact"
+      />
     </div>
   )
 } 

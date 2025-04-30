@@ -26,12 +26,12 @@ export default function HeroSection({ title, description, imageUrl, showContactB
       )}
       <div className="relative container mx-auto px-8">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{title}</h1>
-          <p className="text-xl mb-8">{description}</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat tracking-tight">{title}</h1>
+          <p className="text-xl mb-8 font-montserrat">{description}</p>
           {showContactButton && (
             <a
               href="#contact"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors"
+              className="inline-block bg-primary-blue hover:bg-primary-light text-white px-8 py-3 rounded-lg transition-colors font-medium"
             >
               Заказать консультацию
             </a>

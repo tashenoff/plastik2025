@@ -30,16 +30,16 @@ export default function CTASection({
           quality={100}
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-blue-600/70" />
+        <div className="absolute inset-0 bg-primary-blue/70" />
       </div>
       
       {/* Content */}
       <div className="container mx-auto text-center relative z-10 px-4">
-        <h2 className="text-4xl font-bold mb-6">{title}</h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">{description}</p>
+        <h2 className="text-4xl font-bold mb-6 font-montserrat tracking-tight">{title}</h2>
+        <p className="text-xl mb-8 max-w-2xl mx-auto font-montserrat">{description}</p>
         <Link
           href={buttonLink}
-          className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-block"
+          className="bg-white text-primary-blue hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-block"
         >
           {buttonText}
         </Link>
