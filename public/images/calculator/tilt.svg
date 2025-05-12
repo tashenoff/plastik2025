@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Window frame -->
+    <rect x="40" y="40" width="120" height="120" stroke="#2563EB" stroke-width="4"/>
+    <!-- Opening arrow -->
+    <path d="M100 80L140 120M140 120H120M140 120V100" stroke="#2563EB" stroke-width="4"/>
+</svg> 

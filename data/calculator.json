@@ -1,0 +1,167 @@
+{
+  "windowTypes": [
+    {
+      "id": "fixed",
+      "name": "Глухое окно",
+      "description": "Окно без открывающихся створок",
+      "image": "/images/calculator/fixed-window.svg"
+    },
+    {
+      "id": "single",
+      "name": "Одностворчатое окно",
+      "description": "Окно с одной открывающейся створкой",
+      "image": "/images/calculator/single-window.svg"
+    },
+    {
+      "id": "double",
+      "name": "Двухстворчатое окно",
+      "description": "Окно с двумя створками",
+      "image": "/images/calculator/double-window.svg"
+    },
+    {
+      "id": "balcony",
+      "name": "Балконный блок",
+      "description": "Комбинация окна и двери для балкона",
+      "image": "/images/calculator/balcony-window.svg"
+    },
+    {
+      "id": "triple",
+      "name": "Трехстворчатое окно",
+      "description": "Окно с тремя створками",
+      "image": "/images/calculator/triple-window.svg"
+    },
+    {
+      "id": "panoramic",
+      "name": "Панорамное остекление",
+      "description": "Большие окна от пола до потолка",
+      "image": "/images/calculator/panoramic-window.svg"
+    }
+  ],
+  "openingTypes": {
+    "single": [
+      {
+        "id": "tilt",
+        "name": "Поворотное",
+        "image": "/images/calculator/tilt.svg"
+      },
+      {
+        "id": "tilt-turn",
+        "name": "Поворотно-откидное",
+        "image": "/images/calculator/tilt-turn.svg"
+      }
+    ],
+    "double": [
+      {
+        "id": "both-open",
+        "name": "Обе створки открываются",
+        "image": "/images/calculator/both-open.svg"
+      },
+      {
+        "id": "one-open",
+        "name": "Одна створка открывается",
+        "image": "/images/calculator/one-open.svg"
+      }
+    ],
+    "triple": [
+      {
+        "id": "all-open",
+        "name": "Все створки открываются",
+        "image": "/images/calculator/all-open.svg"
+      },
+      {
+        "id": "side-open",
+        "name": "Боковые створки открываются",
+        "image": "/images/calculator/side-open.svg"
+      }
+    ]
+  },
+  "profile": {
+    "colors": [
+      {
+        "id": "white",
+        "name": "Белый",
+        "price": 0
+      },
+      {
+        "id": "brown",
+        "name": "Коричневый",
+        "price": 2000
+      }
+    ],
+    "types": [
+      {
+        "id": "veka-euroline",
+        "name": "Veka Euroline",
+        "price": 0
+      },
+      {
+        "id": "veka-proline",
+        "name": "Veka Proline",
+        "price": 3000
+      },
+      {
+        "id": "rehau-blitz",
+        "name": "Rehau Blitz",
+        "price": 2500
+      }
+    ]
+  },
+  "glazing": [
+    {
+      "id": "double",
+      "name": "2-х камерный (30мм.)",
+      "price": 0
+    },
+    {
+      "id": "triple",
+      "name": "3-х камерный (40мм.)",
+      "price": 2000
+    }
+  ],
+  "windowsill": [
+    {
+      "id": "none",
+      "name": "Нет",
+      "price": 0
+    },
+    {
+      "id": "200",
+      "name": "200 мм",
+      "price": 1000
+    },
+    {
+      "id": "300",
+      "name": "300 мм",
+      "price": 1500
+    }
+  ],
+  "slopes": [
+    {
+      "id": "none",
+      "name": "Нет",
+      "price": 0
+    },
+    {
+      "id": "200",
+      "name": "200 мм",
+      "price": 800
+    },
+    {
+      "id": "300",
+      "name": "300 мм",
+      "price": 1200
+    }
+  ],
+  "sill": [
+    {
+      "id": "none",
+      "name": "Нет",
+      "price": 0
+    },
+    {
+      "id": "standard",
+      "name": "Стандартный",
+      "price": 500
+    }
+  ]
+} 
