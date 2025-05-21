@@ -33,14 +33,14 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <a 
-              href={`tel:${phone.replace(/[^\d+]/g, '')}`}
+              href="tel:87087488204"
               className="flex items-center text-gray-600 hover:text-blue-600"
             >
               <Phone className="w-5 h-5 mr-2" />
-              <span className="hidden sm:inline">{phone}</span>
+              <span className="hidden sm:inline">87087488204</span>
             </a>
             <a
-              href={`https://wa.me/${whatsappNumber}`}
+              href="https://wa.me/77087488204"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"

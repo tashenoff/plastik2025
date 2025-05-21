@@ -92,7 +92,7 @@ export default function Calculator() {
 Откосы: ${calculatorData.slopes.find(s => s.id === state.slopes)?.name}
     `.trim()
 
-    const whatsappLink = `https://wa.me/${companyData.contacts.whatsapp.replace(/[^\d+]/g, '')}?text=${encodeURIComponent(message)}`
+    const whatsappLink = `https://wa.me/77087488204?text=${encodeURIComponent(message)}`
     window.open(whatsappLink, '_blank')
   }
 
