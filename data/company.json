@@ -1,13 +1,13 @@
 {
   "name": "название",
   "address": {
-    "street": "ул. Примерная, 123",
+    "street": "адрес цеха",
     "city": "Астана",
     "country": "Казахстан"
   },
   "contacts": {
     "phone": "87087488204",
-    "email": "info@plastik-astana.kz",
+    "email": "info@tauvista.kz",
     "whatsapp": "87087488204"
   },
   "workingHours": {
